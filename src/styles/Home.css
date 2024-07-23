@@ -1,0 +1,46 @@
+#home {
+    height: 100%;
+
+    #content-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+        padding: 3rem 0;
+        position: relative;
+        overflow: hidden;
+
+
+        #welcome {
+            max-width: 430px;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin: 2rem 0;
+            }
+
+        }
+
+        img {
+            max-width: 500px;
+            min-width: 300px;
+            width: 40vw;
+
+            @media (width <=1024px) {
+                position: absolute;
+                bottom: -10vh;
+                right: -5vw;
+                z-index: -1;
+
+            }
+
+        }
+
+
+    }
+}
