@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
 * {
   margin: 0;
@@ -17,9 +17,13 @@ body {
   box-shadow: 4px 4px 4px #00000059;
   transform: translate(2.5%, 5%);
   border-radius: 10px;
-  min-height: 90vh;
+  max-height: 90vh;
   width: 95vw;
-  overflow-y: hidden;
+
+  @media (width <=600px) {
+    transform: translate(0%, 5%);
+    width: 100%;
+  }
 }
 
 a {
@@ -35,7 +39,7 @@ button {
   font-size: 1.5rem;
   font-weight: 600;
   color: white;
-  background: #4253EF;
+  background: #4253ef;
   border: none;
   border-radius: 10px;
 }

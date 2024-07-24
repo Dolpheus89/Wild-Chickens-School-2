@@ -1,63 +1,60 @@
 header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 0;
+
+  h1 {
+    font-size: 2.5rem;
+
+    @media (width <=1024px) {
+      font-size: 1.5rem;
+    }
+
+    @media (width <=700px) {
+      display: none;
+    }
+  }
+
+  ul {
+    list-style: none;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 3rem 0;
+    font-size: 1.2rem;
+    gap: 3rem;
 
-
-    h1 {
-        font-size: 2.5rem;
-
-        @media (width <=1024px) {
-            font-size: 1.5rem;
-        }
-
-        @media (width <=700px) {
-            display: none;
-        }
+    @media (width <=1024px) {
+      font-size: 1rem;
     }
 
-    ul {
-        list-style: none;
-        display: flex;
-        font-size: 1.2rem;
-        gap: 3rem;
+    li {
+      cursor: pointer;
+      position: relative;
 
-        @media (width <=1024px) {
-            font-size: 1rem;
+      &::after {
+        content: "";
+
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        border-bottom: 0px solid #4253ef;
+        width: 100%;
+        transition: border 0.05s;
+      }
+
+      &:hover::after {
+        border-bottom: 3px solid #4253ef;
+      }
+
+      &.active {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          border-bottom: 3px solid #4253ef;
+          width: 100%;
         }
-
-        li {
-            cursor: pointer;
-            position: relative;
-
-
-            &::after {
-                content: "";
-
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-                border-bottom: 0px solid #4253EF;
-                width: 100%;
-                transition: border 0.05s;
-            }
-
-            &:hover::after {
-                border-bottom: 3px solid #4253EF;
-            }
-
-            &.active {
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    bottom: -5px;
-                    left: 0;
-                    border-bottom: 3px solid #4253EF;
-                    width: 100%;
-                }
-            }
-        }
+      }
     }
+  }
 }
