@@ -26,5 +26,38 @@ header {
         @media (width <=1024px) {
             font-size: 1rem;
         }
+
+        li {
+            cursor: pointer;
+            position: relative;
+
+
+            &::after {
+                content: "";
+
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                border-bottom: 0px solid #4253EF;
+                width: 100%;
+                transition: border 0.05s;
+            }
+
+            &:hover::after {
+                border-bottom: 3px solid #4253EF;
+            }
+
+            &.active {
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    left: 0;
+                    border-bottom: 3px solid #4253EF;
+                    width: 100%;
+                }
+            }
+        }
     }
 }

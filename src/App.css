@@ -22,6 +22,11 @@ body {
   overflow-y: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 button {
   cursor: pointer;
   display: block;
