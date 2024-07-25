@@ -1,5 +1,6 @@
 #students {
   padding: 0 2rem 1rem 2rem;
+  min-height: 90vh;
 
   #labelAnchor {
     anchor-name: --anchor-el;
@@ -86,7 +87,7 @@
     }
 
     @media (width <=900px) {
-      margin: 0 auto;
+      margin: 3rem auto;
 
       td,
       th {
@@ -98,8 +99,6 @@
     }
 
     @media (width <=650px) {
-      margin: 0 auto;
-
       td,
       th {
         width: 125px;

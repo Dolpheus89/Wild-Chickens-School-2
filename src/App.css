@@ -10,6 +10,7 @@
 html {
   background: url("./assets/concentric_background.svg");
   min-height: 100vh;
+  overflow: hidden;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
   box-shadow: 4px 4px 4px #00000059;
   transform: translate(2.5%, 5%);
   border-radius: 10px;
-  max-height: 90vh;
+  height: 90vh;
   width: 95vw;
 
   @media (width <=600px) {
@@ -32,6 +33,7 @@ a {
 }
 
 button {
+  position: relative;
   cursor: pointer;
   display: block;
   margin: 0 auto;
@@ -42,4 +44,12 @@ button {
   background: #4253ef;
   border: none;
   border-radius: 10px;
+
+  &:hover {
+    background: linear-gradient(90deg, #4253ef 0%, #717ada 100%);
+  }
+
+  &:active {
+    transform: translate(0rem, 0.2rem);
+  }
 }

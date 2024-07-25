@@ -15,9 +15,9 @@ export default function Home() {
           <p>- Afficher des données d&apos;une API</p>
           <p>- Filtrer ces données par différents critères</p>
           <p>Cliquez sur Instructions pour commencer !</p>
-          <button>
-            <Link to={`instructions`}>Instructions</Link>
-          </button>
+          <Link to={`instructions`}>
+            <button>Instructions</button>
+          </Link>
         </div>
         <img src={Welcome} alt="nice looking chicken" />
       </div>
