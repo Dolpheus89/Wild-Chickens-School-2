@@ -7,6 +7,10 @@ import Home from "./pages/Home.jsx";
 import Students from "./pages/Students.jsx";
 import Instructions from "./pages/Instructions.jsx";
 
+{
+  /*🐔 Étape 1 - Get the students*/
+}
+
 const router = createBrowserRouter([
   {
     path: "/",

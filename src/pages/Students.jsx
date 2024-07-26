@@ -18,9 +18,9 @@ const fakeData = [
 ];
 
 export default function Students() {
-  {
-    /* Step 1 : log All students */
-  }
+  /* Étape 1 - Get the students */
+  /* Étape 4 - Filtrez la liste et mettre a jour le nombre de résultats*/
+
   console.info(useLoaderData);
   return (
     <div id="students">
@@ -29,7 +29,7 @@ export default function Students() {
         Campus :
         <select name="campus" id="campus-filter">
           <option value="">---------</option>
-          {/* */}
+          {/*Étape 3 - Remplissez le sélecteur de campus */}
         </select>
       </label>
       <span className="result">Nombre de résultats : {fakeData.length}</span>
@@ -44,9 +44,8 @@ export default function Students() {
             <th>Moyenne</th>
           </tr>
         </thead>
-
         <tbody>
-          {/* */}
+          {/* Étape 2 - Affichez tous les students  */}
           <StudentsRow data={fakeData[0]} />
         </tbody>
       </table>

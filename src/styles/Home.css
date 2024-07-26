@@ -38,6 +38,10 @@
         right: -5vw;
         z-index: -1;
       }
+
+      @media (height <=800px) {
+        display: none;
+      }
     }
   }
 }

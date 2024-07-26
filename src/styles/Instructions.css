@@ -1,18 +1,48 @@
 #instructions {
+  position: relative;
+
   section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
     min-height: 60vh;
+
+    h2 {
+      margin: 2rem 0;
+    }
+
+    p {
+      font-size: clamp(1rem, 2vw, 1.5rem);
+      margin: 1rem 0;
+    }
 
     #stepSelection {
       width: 100%;
       display: flex;
       justify-content: space-around;
+      margin-top: 5rem;
 
       button {
-        min-width: 175px;
+        width: 150px;
+        margin: 0 5px;
+        font-size: 1rem;
+        aspect-ratio: 5/1;
+      }
+    }
+
+    #bestChickenStamp {
+      position: absolute;
+      right: 0;
+      bottom: -10vh;
+      transform: rotate(30deg);
+      width: clamp(120px, 20vw, 280px);
+      margin-left: auto;
+
+      @media (height <=700px) {
+        display: none;
       }
     }
   }

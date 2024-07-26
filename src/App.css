@@ -9,8 +9,8 @@
 
 html {
   background: url("./assets/concentric_background.svg");
+  background-size: 120vw 120vh;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 body {
@@ -18,8 +18,9 @@ body {
   box-shadow: 4px 4px 4px #00000059;
   transform: translate(2.5%, 5%);
   border-radius: 10px;
-  height: 90vh;
+  min-height: 90vh;
   width: 95vw;
+  overflow: hidden;
 
   @media (width <=600px) {
     transform: translate(0%, 5%);
